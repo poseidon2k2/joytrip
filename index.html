@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JoyTrip Hotel</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/slick.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+		integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>	
+	
+<body>
+	
+	<header>
+		
+		<section class="header">
+				<div class="header--logo wow bounceInLeft">
+					<img src="img/logo.png" alt="">
+					
+				</div>
+				<div class="header--right wow bounceInRight">
+					<nav>
+						<ul class="header--right__top">
+							<li><a href="#">Trang chủ</a></li>
+							<li><a href="#">Giới thiệu</a></li>
+							<li><a href="#">Tin tức & Sự kiện</a></li>
+							<li><a href="#">Liên hệ</a></li>
+							<li><a href="#">(+84) 86 817 5678 | (+84) 258 3552 555</a> </li>
+							<li>Vietnamese <ion-icon name="caret-down"></ion-icon></li>
+							<div class="contact-social--icon">
+								<span><a href="#"><i class="fab fa-facebook-f"></i></a></span>
+								<span><a href="#"><i class="fab fa-instagram"></i></a></span>
+								<span><a href="#"><i class="fab fa-pinterest-p"></i></a></span>
+								<span><a href="#"><i class="fab fa-twitter"></i></a></span>
+							
+							</div>
+						</ul>
+						<ul class="header--right__bot">
+							<li><a href="#">LƯU TRÚ</a></li>
+							<li><a href="#">HỘI NGHỊ & SỰ KIỆN</a></li>
+							<li><a href="#">CHĂM SÓC SỨC KHOẺ</a></li>
+							<li><a href="#">TỔ CHỨC TIỆC CƯỚI</a></li>
+							<li><a href="#">DỊCH VỤ TIỆN ÍCH</a></li>
+							<button class="btn--booking">Đặt Phòng</button>
+						</ul>
+					</nav>
+				</div>
+		</section>
+		<section class="nav-moblie">
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-4 col-md-4 col-4 col nav-mb-items">
+						<ion-icon name="menu-outline" class="icon-nav" onclick="nav1Function()" ></ion-icon>
+					</div>
+
+					<div class="col-xl-4 col-md-4 col-4 col nav-mb-items">
+						<img src="img/logo.png">
+					</div>
+
+					<div class="col-xl-4 col-md-4 col-4 col nav-mb-items">
+						<ion-icon name="grid-outline" class="icon-nav" onclick="nav2Function()"></ion-icon>
+					</div>
+				</div>
+				<ul class="header--right__top top-nav" id="icon-nav-1">
+							<li><a href="#">Trang chủ</a></li>
+							<li><a href="#">Giới thiệu</a></li>
+							<li><a href="#">Tin tức & Sự kiện</a></li>
+							<li><a href="#">Liên hệ</a></li>
+							<li><a href="#">(+84) 86 817 5678 | (+84) 258 3552 555</a> </li>
+							<li>Vietnamese <ion-icon name="caret-down"></ion-icon></li>
+							<div class="contact-social--icon">
+								<span><a href="#"><i class="fab fa-facebook-f"></i></a></span>
+								<span><a href="#"><i class="fab fa-instagram"></i></a></span>
+								<span><a href="#"><i class="fab fa-pinterest-p"></i></a></span>
+								<span><a href="#"><i class="fab fa-twitter"></i></a></span>
+							</div>
+							<ion-icon name="close-circle-outline" class="esc-icon" onclick="nav1Function()"></ion-icon>
+						</ul>
+				<ul class="header--right__bot bot-nav" id="icon-nav-2">
+							<li><a href="#">LƯU TRÚ</a></li>
+							<li><a href="#">HỘI NGHỊ & SỰ KIỆN</a></li>
+							<li><a href="#">CHĂM SÓC SỨC KHOẺ</a></li>
+							<li><a href="#">TÔ CHỨC TIỆC CƯỚI</a></li>
+							<li><a href="#">DỊCH VỤ TIỆN ÍCH</a></li>
+							<button class="btn--booking-nav">Đặt Phòng</button>
+							<ion-icon name="close-circle-outline" class="esc-icon" onclick="nav2Function()"></ion-icon>
+						</ul>
+			</div>
+		</section>
+		
+		<section class="banner">
+			<div class="banner--text__title wow bounceInUp" style="animation-delay: 0.5s;">JOY TRIP</div>
+			<div class="banner--text__sub wow bounceInUp"  style="animation-delay: 1s;">Hotel</div>
+			<form action="" class="form ">
+				<div class="form--items wow fadeInUp" style="animation-delay: 1.5s;">
+					<label for="meeting-time">Ngày đến</label>
+					<input type="datetime-local" id="meeting-time-start" name="meeting-time" value="2022-07-04T07:30">
+				</div>
+				<div class="form--items wow fadeInUp" style="animation-delay: 2s;">
+					<label for="meeting-time">Ngày đi</label>
+					<input type="datetime-local" id="meeting-time-end" name="meeting-time" value="2022-07-04T07:30">
+				</div>
+				<div class="form--items wow fadeInUp" style="animation-delay: 2.5s;">
+					<label for="meeting-time">Người lớn</label>
+					<select id="adult" name="adult">
+						<option value="" disabled="" selected="">Số lượng</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+					</select>
+					</div>
+				<div class="form--items wow fadeInUp" style="animation-delay: 3s;">
+					<label for="meeting-time">Trẻ em</label>
+					<select id="child" name="child">
+						<option value="" disabled="" selected="">Số lượng</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+					</select>
+				</div>
+				<div class="form--btn wow fadeInUp" style="animation-delay: 3.5s;">
+					<div class="form--btn__on"></div>
+					<button >Đặt phòng</button>
+				</div>
+				
+			</form>
+		</section>
+	</header>
+	<main>
+		<section class="intro">
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-6 col-md-12 col-12 col intro-text wow bounceInLeft" >
+						<p class="intro-text__sub">Chào mừng bạn đến</p>
+						<p class="intro-text__title">JOY TRIP NHA TRANG HOTEL</p>
+						<p class="intro-text__bio">
+							Hello! Joy Trip Hotel Nha Trang warmly welcomes you to experience our merciful Vietnamese hospital. We are located in Nha Trang City, convenient to the airport and overlooking one of the world's most beautifull bay. Enjoy panoramic bay views throughtout the hotel, relax by the outdoor infinity edge pool, experience our warm restaurant with premier buffets, swim at our outdoor pool or access the beach area, and stop by our fitness centre and spa. We are typical city centre hotel, with all its facilities located in the hotel building. It offers guests a choice of 89 elegant guest rooms and suites spread on 23rd floors with modern  up-to-date amenities. This four-star Joy Trip Hotel caters the need in general, demanded by both business and leisure traveler. Guests at the hotel can choose from a variety of spacious rooms and suites. 
+						</p>
+					</div>
+					<div class="col-xl-6 col-md-12 col-12 col wow bounceInRight">
+						<img src="img/video.png" alt="" width="100%">
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="service">
+			<div class="container">
+				<div class="title-section">
+					<p class="intro-text__sub">Dịch vụ lưu trú</p>
+					<p class="intro-text__title">SANG TRỌNG & THUẬN TIỆN</p>	
+				</div>
+				<div class="row slick-pc">
+					<div class="col-xl-3 col-md-6 col-12 col wow fadeInUp" style="animation-delay: 0s;">
+						<a href="#" class="slide">
+							<div class="card-1 card slide--front">
+								<p class="card--title">Deluxe City View</p>
+								<p class="card--subtitle">5.000.000 / Đêm</p>
+							</div>
+							<div class="slide--back">
+								<button class="slide--back__btn">Đặt Phòng</button>
+								<button class="slide--back__btn">Tư Vấn</button>
+								<button class="slide--back__btn">Feedback</button>
+							</div>
+						</a>
+					</div>
+					<div class="col-xl-3 col-md-6 col-12 col wow fadeInUp" style="animation-delay: 0.2s;">
+						<a href="# " class="slide">
+							<div class="card-2 card slide--front">
+								<p class="card--title">Deluxe Sea View</p>
+								<p class="card--subtitle">9.000.000 / Đêm</p>
+							</div>
+							<div class="slide--back">
+								<button class="slide--back__btn">Đặt Phòng</button>
+								<button class="slide--back__btn">Tư Vấn</button>
+								<button class="slide--back__btn">Feedback</button>
+							</div>
+						</a>
+					</div>
+					<div class="col-xl-3 col-md-6 col-12 col wow fadeInUp" style="animation-delay: 0.4s;">
+						<a href="#" class="slide">
+							<div class="card-3 card slide--front">
+								<p class="card--title">Senior Deluxe Sea View</p>
+								<p class="card--subtitle">6.000.000 / Đêm</p>
+							</div>
+							<div class="slide--back">
+								<button class="slide--back__btn">Đặt Phòng</button>
+								<button class="slide--back__btn">Tư Vấn</button>
+								<button class="slide--back__btn">Feedback</button>
+							</div>
+						</a>
+					</div>
+					<div class="col-xl-3 col-md-6 col-12 col wow fadeInUp" style="animation-delay: 0.6s;">
+						<a href="#" class="slide">
+							<div class="card-4 card slide--front">
+								<p class="card--title">Senior Deluxe Sea View</p>
+								<p class="card--subtitle">6.000.000 / Đêm</p>
+							</div>
+							<div class="slide--back">
+								<button class="slide--back__btn">Đặt Phòng</button>
+								<button class="slide--back__btn">Tư Vấn</button>
+								<button class="slide--back__btn">Feedback</button>
+							</div>
+						</a>
+					</div>
+					
+				</div>
+				
+					<div class="image-slider-2 row slick-mb">
+						<div class="image-items col-xl-3 col-md-6 col-12 col">
+							<img src="img/slick-1.png" alt="" style="width: 100%;">
+						</div>
+						<div class="image-items col-xl-3 col-md-6 col-12 col">
+							<img src="img/slick-2.png" alt="" style="width: 100%;">
+						</div>	
+						<div class="image-items col-xl-3 col-md-6 col-12 col">
+							<img src="img/slick-3.png" alt="" style="width: 100%;">
+						</div>
+						<div class="image-items col-xl-3 col-md-6 col-12 col">
+							<img src="img/slick-4.png" alt="" style="width: 100%;">
+						</div>
+					</div>
+				
+				
+			</div>
+			
+		</section>
+		<section id="line" class="section-line">
+			<div class="container">
+				<div class="line">
+					<div class="line--back"></div>
+					<div class="line--front"></div>
+				</div>
+			</div>
+		</section>
+		<section class="service-vip">
+			
+			<div class="container">
+				<div class="title-section second-section">
+					<p class="intro-text__sub ">Dịch vụ tiện ích</p>
+					<p class="intro-text__title ">HẤP DẪN & HIỆU QUẢ</p>		
+				</div>
+				<div class="row">
+					<div class="col-xl-6 col-md-6 col-12 col " >
+						<div class="items">
+							<p class="title-img">
+								Hồ Bơi
+							</p>
+							<img src="img/gallery1.png" width="85%" alt="" class="gallery-img-1">	
+						</div>
+					</div>
+					<div class="col-xl-6 col-md-6 col-12 col ">
+						<div class="items">
+							<p class="title-img left-ps">
+								Sauna & Steam
+							</p>
+							<img src="img/gallery2.png" width="85%" alt="" class="gallery-img-2">
+						</div>
+					</div>
+					<div class="col-xl-6 col-md-6 col-12 col ">
+						<div class="items">
+							<p class="title-img left-ps-2">
+								Cafe & Bar
+							</p>
+							<img src="img/gallery3.png" width="85%" alt="" class="gallery-img-1">	
+						</div>
+					</div>
+					<div class="col-xl-6 col-md-6 col-12 col" >
+						<div class="items">
+							<p class="title-img left-ps-3">
+								Nhà hàng
+							</p>
+							<img src="img/gallery4.png" width="85%" alt="" class="gallery-img-2">
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</section>
+		<section id="news" class="section-news">
+			<div class="container">
+				<div class="title-section second-section">
+					<p class="intro-text__sub ">Tin tức & Sự kiện</p>
+					<p class="intro-text__title ">THÔNG TIN HỮU ÍCH</p>		
+				</div>
+				<div class="row">
+					<div class="col-xl-6 col-md-6 col-12 col">
+						<div class="items-news">
+							<div class="items-news--box">
+								<img src="img/new-img1.jpeg" alt="" style="width: 100%;">
+								
+								<p class="items-news--box__title">
+									Kinh nghiệm chọn phòng khách sạn Nha Trang có hồ bơi
+								</p>
+								<p class="items-news--box__bio">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et magna aliqua. Quis ipsum
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-6 col-md-6 col-12 col">
+						<div class="items-news">
+							<div class="items-news--box">
+								<img src="img/new-img2.jpeg" alt="" style="width: 100%;">
+								<p class="items-news--box__title">
+									Đến Nha Trang không thể bỏ qua khách sạn JOY TRIP
+								</p>
+								<p class="items-news--box__bio">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et magna aliqua. Quis ipsum
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="brand" >
+			<div class="container" >
+					<div class="image-slider"  >
+						<div class="image-item" >
+						  <div class="image">
+							<img
+							  src="img/agoda.png"
+							  alt=""
+							class="img-click"/>
+						  </div>
+						</div>
+						<div class="image-item">
+						  <div class="image">
+							<img src="img/expedia.png" alt="" class="img-click"/>
+						  </div>
+						</div>
+						<div class="image-item">
+						  <div class="image">
+							<img src="img/tripadvisor.png" alt="" class="img-click"/>
+						  </div>
+						</div>
+						<div class="image-item">
+						  <div class="image">
+							<img src="img/traveloka.png" alt="" class="img-click"/>
+						  </div>
+						</div>
+						<div class="image-item">
+						  <div class="image">
+							<img src="img/trip.com.png" alt="" class="img-click"/>
+						  </div>
+						</div>
+						<div class="image-item">
+						  <div class="image">
+							<img src="img/tripadvisor.png" alt="" class="img-click"/>
+						  </div>
+						</div>
+					  </div>
+			</div>
+		</section>
+	</main>
+	<footer>
+		<div class="container">
+			<div class="footer--logo">
+				<img src="img/logo-footer.png" alt="">
+			</div>
+			<div class="footer-contact">
+				<div class="footer-contact--infor">
+					<p class="footer-contact--infor__title"><ion-icon name="mail" class="icon"></ion-icon>Địa chỉ email</p>
+					<p class="footer-contact--infor__subtitle">sales@joytriphotel.com</p>
+				</div>
+				<div class="footer-contact--infor">
+					<p class="footer-contact--infor__title"><ion-icon name="call" class="icon"></ion-icon>Hotline</p>
+					<p class="footer-contact--infor__subtitle">(+84) 86 817 5678 | (+84) 258 3552 555</p>
+				</div>
+				<div class="footer-contact--infor">
+					<p class="footer-contact--infor__title"><ion-icon name="location" class="icon"></ion-icon> Địa chỉ</p>
+					<p class="footer-contact--infor__subtitle">60 - 61 Phạm Văn Đồng, Vĩnh Hoà, Nha Trang</p>
+				</div>
+			</div>
+			<div class="form-contact">
+				<form action="">
+					<input type="email" name="email" id="" placeholder="Để lại email ..." class="ip-text">
+					<button class="ip-btn">Đăng kí</button>
+				</form>
+			</div>
+			<div class="copyright">
+				<p>2022 - Joy Trip Nha Trang Hotel. Designed by PutaDesign</p>
+			</div>
+		</div>
+	</footer>
+</body>
+<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js" ></script>
+<script type="text/javascript" src="js/slick.min.js"></script>
+<script src="js/app.js"></script>
+<script src="js/wow.min.js"></script>
+<script>new WOW().init();</script>
+</html>
