@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Giới thiệu</title>
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link rel="stylesheet" type="text/css" href="../css/animate.css">
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../css/slick.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>	
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+		integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	
+<body>
+	
+	<main>
+		<section class="intro">
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-6 col-md-12 col-12 col intro-text wow bounceInLeft" >
+						<p class="intro-text__sub">Chào mừng bạn đến</p>
+						<p class="intro-text__title">JOY TRIP NHA TRANG HOTEL</p>
+						<p class="intro-text__bio">
+							Hello! Joy Trip Hotel Nha Trang warmly welcomes you to experience our merciful Vietnamese hospital. We are located in Nha Trang City, convenient to the airport and overlooking one of the world's most beautifull bay. Enjoy panoramic bay views throughtout the hotel, relax by the outdoor infinity edge pool, experience our warm restaurant with premier buffets, swim at our outdoor pool or access the beach area, and stop by our fitness centre and spa. We are typical city centre hotel, with all its facilities located in the hotel building. It offers guests a choice of 89 elegant guest rooms and suites spread on 23rd floors with modern  up-to-date amenities. This four-star Joy Trip Hotel caters the need in general, demanded by both business and leisure traveler. Guests at the hotel can choose from a variety of spacious rooms and suites. 
+						</p>
+					</div>
+					<div class="col-xl-6 col-md-12 col-12 col wow bounceInRight">
+                        <img src="../img/video.png" alt="" width="100%">
+                        <button class="btn-play" onclick="playvideo('../video/video-2.mp4')"><ion-icon name="play-outline"></ion-icon></button>
+                    </div>
+				</div>
+			</div>
+		</section>
+        <div id="video-player">
+            <div class="background"></div>
+            <video src="" controls="" autoplay="" class="video" id="my-vd"></video>
+            <i class="far fa-times-circle" onclick="stopvideo()"></i>
+          </div>
+        <section id="second-sc">
+            <div class="container">
+                <div class="intro-title">
+                    DỊCH VỤ & TIỆN ÍCH
+                </div>
+                <div class="row">
+                    <div class="col-xl-3 col-md-6 col-12">
+                        <div class="box-service active-box">
+                            <img src="../img/icon-pool.png" alt="">
+                            <p>Hồ Bơi</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 col-12">
+                        <div class="box-service">
+                            <img src="../img/wash.png" alt="">
+                            <p>Sauna & Steam</p>
+                        </div>
+                        
+                    </div>
+                    <div class="col-xl-3 col-md-6 col-12">
+                        <div class="box-service">
+                            <img src="../img/coffe.png" alt="">
+                            <p>Coffe & Bar</p>
+                        </div>
+                        
+                    </div>
+                    <div class="col-xl-3 col-md-6 col-12">
+                        <div class="box-service">
+                            <img src="../img/coffe.png" alt="">
+                            <p>Coffe & Bar</p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+				<div class="row">
+					<div class="col-xl-6 col-md-12 col-12 col wow bounceInLeft" >
+						<img src="../img/new-img-1.png" alt="" width="100%">
+					</div>
+					<div class="col-xl-6 col-md-12 col-12 col wow bounceInRight">
+                        <div class="content-intro">
+                            <p>Excepteur sint occaeacat cupidatat non proident sunt in culpa qui offcia deserunt mollit anim id est laborum. sed ut perspiciatis unde omnis natus error. Inventore veritatis et quasi architebeatae vitae dicta sunt explicabonemo enim ipsam voluptatem quia voluptassit. aspernatur aut odit aut fugit, sed quia consequuntur </br></br> Magni dolores eos qui ratione voluptatem sequi nesciunt. neque porro quisquam est qui dolore ipsum quia dolor sit amet, consectetur adipisci velit sed quia. </br></br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis</p>
+                        </div>
+                    </div>
+				</div>
+			</div>
+        </section>
+    </main>
+<script>
+    var videoplayer = document.getElementById("video-player");
+    var myvd = document.getElementById("my-vd");
+
+    function stopvideo(){
+      videoplayer.style.display ="none";
+      myvd.muted = true ; 
+    }
+
+    function playvideo(path){
+      myvd.src = path;
+      myvd.muted = false; 
+      videoplayer.style.display = "block";
+    }
+
+
+</script>
+</body>
+<script type="text/javascript" src="../js/slick.min.js"></script>
+<script src="../js/wow.min.js"></script>
+<script>new WOW().init();</script>
+</html>
